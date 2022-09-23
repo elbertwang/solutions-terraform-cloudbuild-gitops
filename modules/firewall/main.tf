@@ -40,7 +40,6 @@ resource "google_compute_firewall" "allow-ssh" {
     protocol = "tcp"
     ports    = ["22"]
   }
-
   target_tags   = ["http-server"]
   source_ranges = ["0.0.0.0/0"]
 }
